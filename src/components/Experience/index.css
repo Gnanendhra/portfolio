@@ -1,0 +1,78 @@
+.experience-container {
+  color: var(--color-info-light);
+  padding: 20px 50px 120px 50px;
+  background: var(--color-background-2);
+}
+
+.experience-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.experience-title h2 {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: var(--color-title);
+  letter-spacing: 3px;
+  color: var(--color-title);
+  font-weight: 600;
+}
+.experience-title h3 {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+
+.vertical-timeline-element--work {
+  border-radius: 16px;
+}
+
+.vertical-timeline-element-title {
+  font-size: 1rem !important;
+  color: var(--color-info-light);
+}
+
+@media only screen and (min-width: 1024px) {
+  .vertical-timeline-element-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 0.7rem !important;
+  color: var(--color-button-hover);
+}
+
+@media only screen and (min-width: 1024px) {
+  .vertical-timeline-element-subtitle {
+    font-size: 1rem !important;
+  }
+}
+
+.vertical-timeline-element-image {
+  width: 150px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .vertical-timeline-element-image {
+    width: 150px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+img[alt~="ProYuga"] {
+  width: 60px;
+}
+
+img[alt~="iBHubs"] {
+  width: 70px;
+}
+
+.timeline-logo {
+  width: 40px;
+  height: 40px;
+}
