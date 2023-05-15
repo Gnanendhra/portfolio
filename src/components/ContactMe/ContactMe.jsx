@@ -1,4 +1,7 @@
 import React, { useRef } from "react";
+import {toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 import emailjs from "@emailjs/browser";
 
@@ -21,9 +24,11 @@ const ContactMe = (e) => {
       .then(
         (result) => {
           console.log(result.text);
+          toast.success("Sent Successfully")
         },
         (error) => {
           console.log(error.text);
+          toast.error("Failed to Send Message")
         }
       );
     e.target.reset();
