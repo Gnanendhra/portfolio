@@ -23,8 +23,8 @@ const ContactMe = (e) => {
       )
       .then(
         (result) => {
+          toast.success("Sent Successfully");
           console.log(result.text);
-          toast.success("Sent Successfully")
         },
         (error) => {
           console.log(error.text);
