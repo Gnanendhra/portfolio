@@ -1,9 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
-
-import emailjs from "@emailjs/browser";
-
+import emailjs from "emailjs-com";
 import "./ContactMe.css";
-
 import { contactDetails } from "../../data/contacts";
 
 const ContactMe = () => {
@@ -14,7 +11,6 @@ const ContactMe = () => {
     subject: "",
     message: ""
   });
-
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -29,6 +25,7 @@ const ContactMe = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
     setIsLoading(true);
 
     emailjs
@@ -36,23 +33,24 @@ const ContactMe = () => {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        process.env.REACT_APP_PUBLIC_KEY
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {
           console.log(result.text);
+          setIsLoading(false);
+          setInputValues({
+            user_name: "",
+            user_email: "",
+            subject: "",
+            message: ""
+          });
         },
         (error) => {
           console.log(error.text);
+          setIsLoading(false);
         }
       );
-    e.target.reset();
-    setInputValues({
-      user_name: "",
-      user_email: "",
-      subject: "",
-      message: ""
-    });
   };
 
   return (
@@ -116,10 +114,10 @@ const ContactMe = () => {
                   id=""
                   placeholder="Enter Subject"
                   value={inputValues.subject}
-                  onChange={handleInputChange}
-                />
-              </div>
-                            <div className="col-md-12 mb-2">
+                  onChange={  handleInputChange}
+                  />
+                   </div>
+              <div className="col-md-12 mb-2">
                 <textarea
                   name="message"
                   id=""
@@ -129,8 +127,8 @@ const ContactMe = () => {
                   value={inputValues.message}
                   onChange={handleInputChange}
                 ></textarea>
-                <button className="hire-btn" type="submit" >
-                  {isLoading? 'Sending..': "Send Message"}
+                <button className="hire-btn" type="submit" disabled={isLoading}>
+                  {isLoading ? "Sending..." : "Send Message"}
                 </button>
               </div>
             </div>
@@ -142,4 +140,3 @@ const ContactMe = () => {
 };
 
 export default ContactMe;
-
