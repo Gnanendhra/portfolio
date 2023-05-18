@@ -21,11 +21,21 @@ const Experience = () => {
         iconStyle={icon}
         icon={<img className="timeline-logo" src={job.icon} alt="icon" />}
       >
-        <img
+        {/* <img
           src={job.companyLogo}
           alt={job.company}
-          className="vertical-timeline-element-image"
+          className={job.id === 2 ? "vertical-timeline-element-image vertical-timeline-element-image-id2" : "vertical-timeline-element-image"}
         />
+       {job.id === 2 && <span className="cognizant-text">Cognizant</span>} */}
+       <div className="company-logo-container">
+  <img
+    src={job.companyLogo}
+    alt={job.company}
+    className={job.id === 2 ? "vertical-timeline-element-image vertical-timeline-element-image-id2" : "vertical-timeline-element-image"}
+  />
+  {job.id === 2 && <h3 className="cognizant-text">Cognizant</h3>}
+</div>
+
         <h3 className="vertical-timeline-element-title">{job.jobtitle}</h3>
         <h4 className="vertical-timeline-element-subtitle">{job.company}</h4>
         <p>{job.description}</p>

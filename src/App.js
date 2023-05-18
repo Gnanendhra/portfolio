@@ -16,6 +16,7 @@ import Experience from './components/Experience';
 
 
 import "./App.css";
+import { ToastContainer } from 'react-toastify';
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
         <Achievements />
         <ContactMe />
         <Footer />
+       <ToastContainer position="bottom-right"/>
       </BrowserRouter>
     </>
   );

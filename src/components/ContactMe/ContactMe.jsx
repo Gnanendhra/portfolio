@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef,useState } from "react";
 import {toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -9,9 +9,17 @@ import "./ContactMe.css";
 
 import { contactDetails } from "../../data/contacts";
 
+
+
+
 const ContactMe = (e) => {
+
+  const [isLoading,setIsLoading]=useState(false);
   const form = useRef();
+  const [isFormValid, setIsFormValid] = useState(false);
+  
   const sendEmail = (e) => {
+    setIsLoading(true)
     e.preventDefault();
 
     emailjs
@@ -23,17 +31,36 @@ const ContactMe = (e) => {
       )
       .then(
         (result) => {
-          toast.success("Sent Successfully");
+          setIsLoading(false)
+          toast.success('Message Sent Successfully!',{
+            className:'toast-title'
+          });
           console.log(result.text);
         },
         (error) => {
+          setIsLoading(false)
           console.log(error.text);
-          toast.error("Failed to Send Message")
+          toast.error('Failed to Send Message',{
+            className:'toast-title'
+          });
         }
       );
     e.target.reset();
   };
 
+  const handleInputChange = () => {
+    const inputs = form.current.querySelectorAll('input, textarea');
+    let isAllFieldsValid = true;
+
+    inputs.forEach((input) => {
+      if (!input.value) {
+        isAllFieldsValid = false;
+        return;
+      }
+    });
+
+    setIsFormValid(isAllFieldsValid);
+  };
   return (
     <div id="contact" className="reachme-container">
       <div className="reachme-title2">
@@ -75,6 +102,7 @@ const ContactMe = (e) => {
                   name="user_name"
                   id=""
                   placeholder="Enter Your Name"
+                  onChange={handleInputChange}
                 />
               </div>
               <div className="col-md-6 ">
@@ -83,6 +111,7 @@ const ContactMe = (e) => {
                   name="user_email"
                   id=""
                   placeholder="Enter Your Email"
+                  onChange={handleInputChange}
                 />
               </div>
               <div className="col-md-12">
@@ -91,6 +120,7 @@ const ContactMe = (e) => {
                   name="subject"
                   id=""
                   placeholder="Enter Subject"
+                  onChange={handleInputChange}
                 />
               </div>
               <div className="col-md-12 mb-2">
@@ -100,9 +130,10 @@ const ContactMe = (e) => {
                   cols="60"
                   rows="8"
                   placeholder="Your Message"
+                  onChange={handleInputChange}
                 ></textarea>
-                <button className="hire-btn" type="submit">
-                  Send Message
+                <button className="hire-btn" type="submit" disabled={!isFormValid}>
+                  {isLoading ? "Sending..":"Send message"}
                 </button>
               </div>
             </div>

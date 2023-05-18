@@ -158,3 +158,9 @@
 .light .email-me textarea {
   color: #000000;
 }
+.toast-title{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
