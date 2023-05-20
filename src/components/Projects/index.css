@@ -223,3 +223,14 @@
   font-size: 11px;
   color: rgb(5, 5, 5) !important;
 }
+
+@media only screen and (min-width: 768px) {
+  .owl-carousel > .owl-dots {
+    display: none !important;   
+  }
+
+  .owl-carousel > .owl-stage-outer > .owl-stage {
+    margin: auto;   
+  }
+}
+

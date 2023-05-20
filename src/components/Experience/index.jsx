@@ -5,10 +5,17 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import { experienceData, experienceStyles } from "../../data/experience";
+import cognizant from "../../images/companies/cognizant.png"
 
 import "./index.css";
 
 const Experience = () => {
+
+  const formatedCompanyLogos = {
+    hexagon: 'https://www.hexagon.com/images/v-2-logo.svg/-/media/project/one-web/master-site/defaults/icons/hexagon-logo.png?h=59&iar=0&w=192&hash=81E2D76B11580C47B0992E91EDE3722E',
+    cognizant
+  }
+
   const renderJobExperience = () => {
     const { icon, content, arrowStyle } = experienceStyles;
     return experienceData.workExperience.map((job) => (
@@ -23,7 +30,7 @@ const Experience = () => {
       >
       
         <img
-          src={job.companyLogo}
+          src={formatedCompanyLogos[job.companyLogo]}
           alt={job.company}
           className={job.id === 2 ? "vertical-timeline-element-image vertical-timeline-element-image-id2" : "vertical-timeline-element-image"}
         />
