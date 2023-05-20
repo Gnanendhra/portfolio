@@ -13,37 +13,43 @@ export const skillsData = [
     },
     {
         "id": 3,
+        "icon": "https://img.icons8.com/color/48/null/bootstrap.png",
+        "lang_name": "Bootstrap",
+        "exp_level": "Intermediate"
+    },
+    {
+        "id": 4,
         "icon": "https://img.icons8.com/color/48/null/javascript--v1.png",
         "lang_name": "JavaScript",
         "exp_level": "Intermediate"
     },
 
     {
-        "id": 4,
+        "id": 5,
         "icon": "https://img.icons8.com/color/48/null/react-native.png",
         "lang_name": "ReactJs",
         "exp_level": "Intermediate"
     },
     {
-        "id": 5,
+        "id": 6,
         "icon": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
         "lang_name": "NextJs",
         "exp_level": "Beginner"
     },
     {
-        "id": 6,
+        "id": 7,
         "icon": "https://img.icons8.com/color/48/null/sql.png",
         "lang_name": "SQL",
         "exp_level": "Intermediate"
     },
     {
-        "id": 7,
+        "id": 8,
         "icon": "https://img.icons8.com/color/48/null/git.png",
         "lang_name": "Git",
         "exp_level": "Beginner"
     },
     {
-        "id": 8,
+        "id": 9,
         "icon": "https://img.icons8.com/color/48/null/python--v1.png",
         "lang_name": "Python",
         "exp_level": "Beginner"

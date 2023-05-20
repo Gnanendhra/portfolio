@@ -55,12 +55,7 @@
   margin: 0 auto;
   
 }
-.vertical-timeline-element-image-id2 {
-  width: 40px;
-  height: 40px;
- 
-  
-}
+
 
 @media only screen and (min-width: 768px) {
   .vertical-timeline-element-image {
@@ -70,12 +65,7 @@
     right: 10px;
    
   }
-  .vertical-timeline-element-image-id2 {
-    width: 40px;
-  height: 40px;
-    
-   
-  }
+ 
 }
 
 img[alt~="ProYuga"] {
@@ -91,11 +81,7 @@ img[alt~="iBHubs"] {
   height: 40px;
 }
 
-.company-logo-container{
-  display: flex;
-  align-items: flex-end;
-}
-.cognizant-text
-{
-  text-align: end;
-}
+
+.vertical-timeline-element-image-id2 {
+  background-color: white;
+  }
