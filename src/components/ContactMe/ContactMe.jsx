@@ -156,7 +156,7 @@ const ContactMe = (e) => {
                     isFormSubmitting && "form-submit"
                   }`}
                   type="submit"
-                  disabled={isFormSubmitting}
+                  disabled={isFormSubmitting ||disableSubmit}
                 >
                   {isFormSubmitting && (
                     <ColorRing
