@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         "id": 0,
-        "language_used": "React |  JavaScript | BootStrap | CSS | JQuery",
+        "language_used": "React |  JavaScript | BootStrap | CSS",
         "about_avatar": "portfolio",
         "updated_on": "2022-10-25T14:34:06.579936Z",
         "Project_title": "Portfolio",
