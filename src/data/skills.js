@@ -46,12 +46,12 @@ export const skillsData = [
         "id": 8,
         "icon": "https://img.icons8.com/color/48/null/git.png",
         "lang_name": "Git",
-        "exp_level": "Beginner"
+        "exp_level": "Intermediate"
     },
     {
         "id": 9,
         "icon": "https://img.icons8.com/color/48/null/python--v1.png",
         "lang_name": "Python",
-        "exp_level": "Beginner"
+        "exp_level": "Intermediate"
     }
 ]

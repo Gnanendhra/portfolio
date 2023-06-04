@@ -5,7 +5,7 @@ import { aboutMeData } from "../../data/aboutMe";
 
 import "./AboutMe.css";
 
-import resume from "../../pdf/resume.pdf";
+import gnanendhra_resume from "../../pdf/gnanendhra_resume.pdf";
 
 const AboutMe = () => {
   const img_300 = "https://drive.google.com/uc?id=";
@@ -39,8 +39,7 @@ const AboutMe = () => {
                   className=" col-lg-6 col-md-7  col-sm-12 about_myinfo order-1 order-lg-2"
                 >
                   <div className="title">
-                    <h2>{details.title}</h2>
-                    <h3>{details.title_2}</h3>
+                    <h3>{details.title}</h3>
                   </div>
                   <div className="about-description">
                     <div id="foo" unselectable="on" className="unselectable">
@@ -54,8 +53,8 @@ const AboutMe = () => {
 
                   <div className="itscv">
                     <a
-                      href={resume}
-                      download="resume"
+                      href={gnanendhra_resume}
+                      download="gnanendhra_resume"
                       target="_blank"
                       rel="noreferrer"
                     >
