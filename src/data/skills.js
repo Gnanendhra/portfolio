@@ -8,7 +8,7 @@ export const skillsData = [
     {
         "id": 2,
         "icon": "https://img.icons8.com/color/48/null/css3.png",
-        "lang_name": "css",
+        "lang_name": "CSS",
         "exp_level": "Intermediate"
     },
     {
