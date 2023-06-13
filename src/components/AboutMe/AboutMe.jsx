@@ -5,7 +5,7 @@ import { aboutMeData } from "../../data/aboutMe";
 
 import "./AboutMe.css";
 
-import gnanendhra_resume from "../../pdf/gnanendhra_resume.pdf";
+import gnanendhra_resume from "../../pdf/Gnanendhra_Resume.pdf";
 
 const AboutMe = () => {
   const img_300 = "https://drive.google.com/uc?id=";
@@ -54,7 +54,7 @@ const AboutMe = () => {
                   <div className="itscv">
                     <a
                       href={gnanendhra_resume}
-                      download="gnanendhra_resume"
+                      download="Gnanendhra_Resume"
                       target="_blank"
                       rel="noreferrer"
                     >
