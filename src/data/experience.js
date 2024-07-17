@@ -2,15 +2,24 @@ export const experienceData = {
     "workExperience": [
         {
             id: 1,
-            company: 'Hexagon Capability Center',
-            companyLogo: 'hexagon',
-            jobtitle: 'Senior Software Developer',
+            company: 'Altimetrik India Pvt Ltd',
+            companyLogo: 'altimetrik',
+            jobtitle: 'Product and Platform Engineering',
             description: "I actively participated in the development of the OCR (On Call Records) product, where my contributions encompassed developing UI components utilizing ReactJS. Additionally, I offered valuable backend support utilizing .Net and Sql technologies.",
-            date: 'Dec 2021 - Present',
+            date: 'Dec 2023 - Present',
             icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K'
         },
         {
             id: 2,
+            company: 'Hexagon Capability Center',
+            companyLogo: 'hexagon',
+            jobtitle: 'Senior Software Developer',
+            description: "I worked on the Taskflow 4.0 team, focusing on a CRM and task management application. I designed and developed UI-rich, pixel-perfect, reusable React components for the organization.",
+            date: 'Dec 2021 - Dec 2023',
+            icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K'
+        },
+        {
+            id: 3,
             company: 'Cognizant Technology Solutions',
             companyLogo: 'cognizant',
             jobtitle: 'Programmer Analyst Trainee',
@@ -21,7 +30,7 @@ export const experienceData = {
     ],
     "studies": [
         {
-            id: 3,
+            id: 4,
             institution: 'Aditya College Of Engineering',
             course: 'Bachelor\'s degree in Computer Science',
             date: '2016 - 2020',
@@ -29,7 +38,7 @@ export const experienceData = {
             icon: 'https://img.icons8.com/?size=512&id=PJleCo3so0R2&format=png',
         },
         {
-            id: 4,
+            id: 5,
             institution: 'Bharathi Junior College',
             course: 'Intermediate',
             date: '2014 - 2016',
@@ -37,7 +46,7 @@ export const experienceData = {
             icon: 'https://img.icons8.com/?size=512&id=PJleCo3so0R2&format=png',
         },
         {
-            id: 5,
+            id: 6,
             institution: 'Goutham High School',
             course: 'Seconday Education',
             date: '2014',

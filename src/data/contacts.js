@@ -14,7 +14,7 @@ export const contactDetails = [
     {
         "id": 3,
         "icon": "fa fa-map-marker",
-        "contact_info": "Hyderabad, India",
+        "contact_info": "Bangalore, India",
         "contact_name": "Location"
     }
 ]

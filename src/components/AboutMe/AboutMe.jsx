@@ -2,13 +2,13 @@ import decor1 from "../../images/decoration/dots-1.png";
 import reactagle from "../../images/decoration/Rectangle-7.png";
 import shady from "../../images/decoration/dots.png";
 import { aboutMeData } from "../../data/aboutMe";
+import mailToSms from '../../images/mail-to-sms.png'
 
 import "./AboutMe.css";
 
 import Gnanendhra_Resume from "../../pdf/Gnanendhra_Resume.pdf";
 
 const AboutMe = () => {
-  const img_300 = "https://drive.google.com/uc?id=";
 
   return (
     <>
@@ -32,7 +32,7 @@ const AboutMe = () => {
                   data-aos="fade-up-right"
                   className=" col-lg-6 col-md-5 col-sm-12 about-img order-2 order-lg-1"
                 >
-                  <img src={`${img_300}${details.about_avatar}`} alt="" />
+                  <img src={mailToSms} alt="mailToSms" />
                 </div>
                 <div
                   data-aos="fade-up-left"
