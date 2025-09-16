@@ -40,13 +40,13 @@ export const skillsData = [
         "id": 7,
         "icon": "https://img.icons8.com/color/48/null/sql.png",
         "lang_name": "SQL",
-        "exp_level": "Intermediate"
+        "exp_level": "Experienced"
     },
     {
         "id": 8,
         "icon": "https://img.icons8.com/color/48/null/git.png",
         "lang_name": "Git",
-        "exp_level": "Intermediate"
+        "exp_level": "Experienced"
     },
     {
         "id": 9,
