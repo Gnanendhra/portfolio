@@ -6,13 +6,14 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { experienceData, experienceStyles } from "../../data/experience";
 import cognizant from "../../images/companies/cognizant.png";
+import altimetrik from "../../images/companies/altimetrik.png";
 
 import "./index.css";
 
 const Experience = () => {
 
   const formatedCompanyLogos = {
-    altimetrik:'https://www.altimetrik.com/storage/2023/07/Altimetrik-logo_4.png',
+    altimetrik,
     hexagon: 'https://www.hexagon.com/images/v-2-logo.svg/-/media/project/one-web/master-site/defaults/icons/hexagon-logo.png?h=59&iar=0&w=192&hash=81E2D76B11580C47B0992E91EDE3722E',
     cognizant
   }
