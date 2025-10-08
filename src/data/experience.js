@@ -5,7 +5,7 @@ export const experienceData = {
             company: 'Altimetrik India Pvt Ltd',
             companyLogo: 'altimetrik',
             jobtitle: 'Product and Platform Engineering',
-            description:'I streamlined order management processes for Intuit by enhancing the Order Lookup application, monitoring performance with RUM dashboards, and analyzing Splunk logs to improve issue resolution, ensure data reliability, and enhance system stability and user satisfaction.',
+            description:"I drove efficiency and stability within the Intuit Order Management process by enhancing the Order Lookup application's user interface, cutting test automation development time by 50% using Augment/GitHub Copilot, and proactively improving issue resolution and system reliability through RUM dashboards, Splunk log analysis, and iterative Agile/Git workflows.",
             date: 'Dec 2023 - Present',
             icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K'
         },
