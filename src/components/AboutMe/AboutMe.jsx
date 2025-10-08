@@ -6,7 +6,7 @@ import mailToSms from '../../images/mail-to-sms.png'
 
 import "./AboutMe.css";
 
-import Gnanendhra_Resume from "../../pdf/Gnanendhra_Resume.pdf";
+import Gnanendhra_Reddy_Resume from "../../pdf/Gnanendhra_Reddy_Resume.pdf";
 
 const AboutMe = () => {
 
@@ -53,8 +53,8 @@ const AboutMe = () => {
 
                   <div className="itscv">
                     <a
-                      href={Gnanendhra_Resume}
-                      download="Gnanendhra_Resume"
+                      href={Gnanendhra_Reddy_Resume}
+                      download="Gnanendhra_Reddy_Resume"
                       target="_blank"
                       rel="noreferrer"
                     >

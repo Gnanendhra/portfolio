@@ -56,9 +56,9 @@ export const skillsData = [
     },
     {
         "id": 10,
-        "icon": "https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000",
-        "lang_name": "Tailwind CSS",
-        "exp_level": "Beginner"
+        "icon": "https://img.icons8.com/color/48/null/typescript--v1.png",
+        "lang_name": "TypeScript",
+        "exp_level": "Intermediate"
     }
 ]
 
